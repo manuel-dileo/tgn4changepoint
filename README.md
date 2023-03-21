@@ -16,3 +16,11 @@ Finally, we analyze how the node states change over time.
 
 Our results show that TGL can be a useful tool to analyze and detect change points in networked temporal data.
 Indeed, node states extracted by the model reflect i)  the habits changes of single users, ii) the diversity of the behavior of previously similar users during the event, and iii) the effect of the event on the interests of the users.
+
+# Dataset
+Due to privacy reasons on personal data like username and textual content, we can't release the dataset related to Steemit. To patch this problem, we provide an anonymized version of our data. This version represents the final mathematical objects that are use to feed the models. For data gathering you can refer to the [Steemit API documentation](https://developers.steem.io/). 
+
+Data related to the period affected by the shocking event are available in this repo in the folder `steemit-hardfork-data`. For data related to the "stable" period in 2016 you can refer to PAPER SUBMITTED at Journal of Machine Learning.
+
+# Experiments
+The notebook `TGN-SteemitHardFork.ipynb` contains all the materials to reproduce the experiments on the period affected by the shocking event.
