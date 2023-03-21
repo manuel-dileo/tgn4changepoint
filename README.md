@@ -3,6 +3,8 @@ Use of Temporal Graph Networks to analyze node states shift during a shocking ev
 
 The case study is a user migration from Steemit, the most well-known Blockchain-based OSN, to Hive, due to an hard-fork event.
 
+This repository contains information, data and code behind the work: TBA
+
 # Overview
 We investigated the learning power of temporal graph learning during shocking events, an important task since they occur in temporal networked data and may lead to drastic variations in the characteristics of single nodes as well as their interactions.
 As a case study, we analyzed a user migration due to a hard-fork event from Steemit, a novel blockchain-based online social network that allows the retrieval of validated high-resolution temporal information. 
