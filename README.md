@@ -23,4 +23,30 @@ Due to privacy reasons on personal data like username and textual content, we ca
 Data related to the period affected by the shocking event are available in this repo in the folder `steemit-hardfork-data`. For data related to the "stable" period in 2016 you can refer to PAPER SUBMITTED at Journal of Machine Learning.
 
 # Experiments
-The notebook `TGN-SteemitHardFork.ipynb` contains all the materials to reproduce the experiments on the period affected by the shocking event.
+The notebook `TGN-SteemitHardFork.ipynb` contains all the materials to reproduce the experiments on the period affected by the shocking event. The figure below shows the running architecture of the TGN model. 
+
+![GNN Architecture](GNNArchitecture.drawio.png "Dynamic GNN based on ROLAND framework"). 
+
+We report the architecture configuration in the following table: 
+
+| Layer                     | input_channels | output_channels |
+|---------------------------|----------------|-----------------|
+| Preprocessing layer (MLP) | 384            | 256             |
+| Preprocessing layer (MLP) | 256            | 128             |
+| Graph Convolution (GCN)   | 128            | 64              |
+| Embedding Update (GRU)    | 64             | 64              |
+| Graph Convolution (GCN)   | 64             | 32              |
+| Embedding Update (GRU)    | 32             | 32              |
+| Decoder (HadamardMLP)     | 32             | 2               | 
+
+We report the configuration of hyperparameters for the future link prediction task in the following table: 
+
+| Hyperparameter | Value |
+|----------------|-------|
+| Optimizer      | Adam  |
+| Learning rate  | 0.01  |
+| Weight Decay   | 5e-3  |
+| Epochs         | 50    |
+
+
+
