@@ -20,7 +20,7 @@ Indeed, node states extracted by the model reflect i)  the habits changes of sin
 # Dataset
 Due to privacy reasons on personal data like username and textual content, we can't release the dataset related to Steemit. To patch this problem, we provide an anonymized version of our data. This version represents the final mathematical objects that are use to feed the models. For data gathering you can refer to the [Steemit API documentation](https://developers.steem.io/). 
 
-Data related to the period affected by the shocking event are available in this repo in the folder `steemit-hardfork-data`. For data related to the "stable" period in 2016 you can refer to PAPER SUBMITTED at Journal of Machine Learning.
+Data related to the period affected by the shocking event are available in this repo in the zip `steemit-hardfork-data.zip`. To use them in the notebook of experiments, you need to unzip the file in a folder with the same name on the same level. For data related to the "stable" period in 2016 you can refer to PAPER SUBMITTED at Journal of Machine Learning.
 
 # Experiments
 The notebook `TGN-SteemitHardFork.ipynb` contains all the materials to reproduce the experiments on the period affected by the shocking event. The figure below shows the running architecture of the TGN model. 
