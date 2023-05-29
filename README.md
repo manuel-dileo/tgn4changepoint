@@ -1,21 +1,12 @@
 # Can Temporal Graph Networks be useful for change point detection?
-Use of Temporal Graph Networks to analyze node states shift during a shocking event in an online social network (OSN). 
+Use of Temporal Graph Networks to analyze node states shift during a network shocking event in an online social network (OSN). 
 
 The case study is a user migration from Steemit, the most well-known Blockchain-based OSN, to Hive, due to an hard-fork event.
 
 This repository contains information, data and code behind the work: TBA
 
 # Overview
-We investigated the learning power of temporal graph learning during shocking events, an important task since they occur in temporal networked data and may lead to drastic variations in the characteristics of single nodes as well as their interactions.
-As a case study, we analyzed a user migration due to a hard-fork event from Steemit, a novel blockchain-based online social network that allows the retrieval of validated high-resolution temporal information. 
-
-To do so, first,  we model ``follow'' links between users and textual content produced by users as a dynamic attributed graph.
-Then, we use future link prediction as a self-supervised task for a deep TGL model to obtain useful node representations from the dynamic graph.
-The embeddings represent node states before, during, and after the shocking event.
-Finally, we analyze how the node states change over time.
-
-Our results show that TGL can be a useful tool to analyze and detect change points in networked temporal data.
-Indeed, node states extracted by the model reflect i)  the habits changes of single users, ii) the diversity of the behavior of previously similar users during the event, and iii) the effect of the event on the interests of the users.
+Shocking events, characterized by the introduction of new information, have the potential to disrupt the distribution of temporal data in various domains. In the context of online social networks, network shocking events, i.e. events widely recognized by most network users, are worthy of attention since they significantly impact users' behavior and interactions. However, how users behave before, during, and after such events is still not clear. To address this gap we rely on the framework of graph representation learning, particularly focusing on Temporal Graph Networks (TGNs). In particular, we investigate the dynamics of node representations returned by TGNs during a network shocking event and examine the learning capacity of temporal graph learning in this context. We utilize a dataset from Steemit, a blockchain-based online social network, where a user migration event caused by a hard fork in the supporting blockchain serves as the network shocking event. Our findings demonstrate that both the prediction performance and node representation are influenced by the occurrence of the shocking event. We observe shifts in node representations, indicating changes in individual users' behavior during the event. Furthermore, group-centric analysis reveals changes in behavior and memberships among similar users during different transition periods. Additionally, we find a level of polarization in node representations caused by the shocking event, which gradually diminishes over time, resulting in more evenly distributed dimensions of node representations months after the event. This work contributes to a deeper understanding of temporal graph learning dynamics during network shocking events, highlighting their potential for change point detection and shedding light on the behavior of networked systems in the face of significant events.
 
 # Dataset
 Due to privacy reasons on personal data like username and textual content, we can't release the dataset related to Steemit. To patch this problem, we provide an anonymized version of our data. This version represents the final mathematical objects that are use to feed the models. For data gathering you can refer to the [Steemit API documentation](https://developers.steem.io/). 
